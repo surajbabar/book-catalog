@@ -1,0 +1,17 @@
+1)to store records
+		catalog(array)=[records];	
+		record(object)={isbn:0007258917;price:245;author:Jhumpa Lahiri;title:The Namesake;publisher:Harper Collins India";};
+
+match1
+var str = "For more information, see Chapter 3.4.5.1";
+var re = /(chapter \d+(\.\d)*)/i;
+var found = str.match(re);
+
+alert(found);
+match2		var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+var regexp = /[A-E]/gi;
+var matches_array = str.match(regexp);
+
+alert(matches_array);
+
+matches_array now equals ['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e']

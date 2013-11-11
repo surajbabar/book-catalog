@@ -1,0 +1,138 @@
+						   book catalog 1.0
+Write a command line tool to manage a bookcatalog.
+bookcatalog add "isbn:0007258917;price:245;author:Jhumpa Lahiri;title:The Namesake;publisher:Harper Collins India" will add the book to the inventory.
+bookcatalog remove -isbn "0007258917" will remove the book by isbn.
+bookcatalog list
+will list all books with Author,Title,Publication,ISBN & Price
+and display the results as:-
+ISBN Price Author Title Publisher
+8172234988 200 Paulo Coelho The Alchemist Harper Collins Publishers
+000729980X 144 Agatha Christie The Clocks Harper Collins UK
+-------------------------------------------------------------------------------
+							book catalog 1.1
+	ISBN is the unique identifier for the books. Ensure that at no time, there are two books by the same ISBN.
+
+	Also ensure that the program does not crash without telling the user what the right usage is or what the mistake was.	
+---------------------------------------------------------------------------------------			
+							book catalog sample data														
+	ISBN;Price;Author;Title;Publisher
+9380200587;559;Saurabh Thirani;Spot the Next Economic Bubble;Network18 Publications
+0571283071;374;Jeet Thayil;Narcopolis;Faber & Faber
+818400298X;287;Yuvraj Singh;In Different Form;Ebury Press
+1422187101;350;Nancy Duarte;HBR Guide to Persuasive Presentations;Harvard Business Review Press
+1447231309;279;Jeffrey Archer;The Collected Short Stories;Pan Macmillan India
+819232804X;446;Khushwant Singh;The Freethinker's Prayer Book; Aleph Publishers
+140870420X;570;J. K. Rowling;The Casual Vacancy;Little, Brown Book Group
+9381810788;431;The Walt Disney;Encyclopedia: Rahul Dravid Timeless Steel;The Walt Disney
+8172234988;200;Paulo Coelho;The Alchemist;Harper Collins Publishers
+8129120216;98;Chetan Bhagat;What Young India Wants;Rupa Publications
+000729980X;144;Agatha Christie;The Clocks;Harper Collins Publishers
+----------------------------------------------------------------------------------------
+							book catalog 1.2
+	bookcatalog search "Paulo"
+
+will search Paulo under Author,Title,Publication,ISBN & Price
+
+and display the results as:-
+
+ISBN Price Author Title Publisher
+
+8172234988 200 Paulo Coelho The Alchemist Harper Collins Publishers
+-------------------------------------------------------------------------------------
+						 book catalog 1.3
+bookcatalog search -author "Paulo"
+
+will search Paulo under Author
+
+and display the results as:-
+
+ISBN Price Author Title Publisher
+
+8172234988 200 Paulo Coelho The Alchemist Harper Collins Publishers
+
+ bookcatalog search -title "Alchemist"
+
+will search Alchemist under Title
+
+and display the results as:-
+
+ISBN Price Author Title Publisher
+
+8172234988 200 Paulo Coelho The Alchemist Harper Collins Publishers
+
+bookcatalog search -publisher "Harper Collins"
+
+will search Harper Collins under publisher
+
+and display the results as:-
+
+ISBN Price Author Title Publisher
+
+8172234988 200 Paulo Coelho The Alchemist Harper Collins Publishers
+
+000729980X 144 Agatha Christie The Clocks Harper Collins UK
+
+bookcatalog search -isbn "0571283071"
+
+will search 0571283071 under isbn
+
+and display the results as:-
+
+ISBN Price Author Title Publisher
+0571283071 374 Jeet Thayil Narcopolis Faber & Faber						 
+-------------------------------------------------------------------------------------
+							book catalog 1.4
+Add an update option for the bookcatalog to update book attributes in the catalog after looking it up by the isbn number provided
+
+ 
+
+bookcatalog update "isbn:0007258917;price:265;author:Jhumpa Lahiri;title:The Namesake;publisher:Harper Collins India"
+
+will update the price of the book to 265
+
+  
+
+bookcatalog update "isbn:0007258917;price:275;publisher:Harper Collins"
+
+will update the price of the book to 275 and publisher to Harper Collins					
+---------------------------------------------------------------------------------p-4		
+                          book catalog 1.5
+Tagging is a concept that helps in classifying any item under multiple categories. 
+
+For example, a book can be tagged as Indian, Sports, Cricket or as Comic or as Humour etc.
+
+ 
+
+Implement tagging for the books in the bookcatalog.
+
+You should be able to: 
+
+
+Add tags to the books 
+
+bookcatalog tags add "isbn:140870420X,tags:novel,tragedy"
+
+It should not throw any error if a tag is already present
+
+
+Search books by tags  
+
+bookcatalog search -tag "tragedy" 
+
+bookcatalog search "tragedy"
+
+
+Remove tags from a book. 
+
+bookcatalog tags remove "isbn:140870420X,tags:tragedy,comic"
+
+It should not throw any error if a tags are not present
+
+ 
+
+Also, the bookcatalog list and bookcatalog search commands should henceforth display the tags of books along.     
+------------------------------------------------------------------------------------------------								book catalog 1.6
+Hoping that you are close to completing Book Catalog 1.5.
+
+Don't worry there is no Book Catalog 1.6. But, I am expecting you to submit 1.5 soon. Please work on giving out a good product.
+---------------------------------------------------------------------------------------------

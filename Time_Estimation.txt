@@ -1,0 +1,7 @@
+						Time Estimation--(in terms of minutes).
+1) Understanding problem   30-40
+2) Making functions for each task	60-75
+3) joining functions and making main file 20-30
+4) Testing with boundary conditions 30
+5) testing by others 30
+			Total Time : 2h.50m to 3h.25m.

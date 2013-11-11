@@ -1,0 +1,14 @@
+  [done]1) Creating necessary files.
+  2) making functions for:-
+      1.add a record
+          bookcatalog add "isbn:0007258917;price:245;author:Jhumpa Lahiri;title:The Namesake;publisher:Harper Collins India" will add the book to the inventory.
+        2.Remove a record
+            bookcatalog remove -isbn "0007258917" will remove the book by isbn.
+        3.Display list of records
+            bookcatalog list
+  3)display the results as:-
+    ISBN     Price Author     Title          Publisher
+    8172234988 200   Paulo Coelho The Alchemist Harper Collins Publishers.
+  4)integrating all functions.
+  5)connecting with command prompt and testing. 
+  6) testing by others and boundry conditions. 
